@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap"
+      rel="stylesheet"
+    />
+
+    <script defer src="index.js"></script>
+
+    <title>Age calculator app</title>
+  </head>
+  <body>
+    <main>
+      <form action="#" class="form">
+        <div class="form__item">
+          <label for="form__day__input" class="form__item__label">DAY</label>
+          <input
+            type="number"
+            name="day"
+            id="form__day__input"
+            placeholder="DD"
+            class="input"
+            required
+          />
+          <p class="empty hidden empty--day">This field is required</p>
+          <p class="error hidden error--day">Must be a valid day</p>
+          <p class="whole-error hidden">Must be a valid date</p>
+        </div>
+        <div class="form__item">
+          <label for="form__month__input" class="form__item__label"
+            >MONTH</label
+          >
+          <input
+            type="number"
+            name="month"
+            id="form__month__input"
+            placeholder="MM"
+            class="input outline-month"
+            required
+          />
+          <p class="empty hidden empty--month">This field is required</p>
+          <p class="error hidden error--month">Must be a valid month</p>
+        </div>
+        <div class="form__item">
+          <label for="form__year__input" class="form__item__label">YEAR</label>
+          <input
+            type="number"
+            name="year"
+            id="form__year__input"
+            placeholder="YYYY"
+            class="input outline-year"
+            required
+          />
+          <p class="empty hidden empty--year">This field is required</p>
+          <p class="error hidden error--year">Must be in the past</p>
+        </div>
+
+        <button class="btn">
+          <img src="assets/images/icon-arrow.svg" alt="arrow button" />
+        </button>
+      </form>
+
+      <hr />
+      <div class="result">
+        <p><span class="years dashes">--</span> years</p>
+        <p><span class="months dashes">--</span> months</p>
+        <p><span class="days dashes">--</span> days</p>
+      </div>
+    </main>
+  </body>
+</html>
